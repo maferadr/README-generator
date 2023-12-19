@@ -7,9 +7,9 @@
 // Description, Table of Contents, Installation, Usage, License, 
 //Contributing, Tests, and Questions.
 
-// choose a license for my application from a list of options
 //Questions => Github, email, and additional questions. => Bear in mind table of contents.
 
+//Packages needed for the application to run
 const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path');
@@ -44,6 +44,8 @@ const questions = [
         name: 'usage',
         message: 'Usage of the Application'
     },
+    //List of License options for the user to choose
+    //Underscore sign to avoid errors on the Badge Shields.io set up
     {
         type: 'checkbox',
         name: 'license',
@@ -75,6 +77,7 @@ const questions = [
         name: 'motivation',
         message: 'What was your motivation to build this project?'
     },
+    //Author will explain the functionality of the Application
     {
         type: 'input',
         name: 'functionality',
